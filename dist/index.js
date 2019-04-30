@@ -6,6 +6,7 @@ import _inherits from "@babel/runtime/helpers/esm/inherits";
 import React, { Component } from 'react';
 import { TimePicker, Icon } from 'antd';
 import moment from 'moment';
+import 'antd/dist/antd.css';
 import './time.css';
 var format = 'HH:mm';
 
