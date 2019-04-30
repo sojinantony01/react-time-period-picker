@@ -1,4 +1,4 @@
-#React time period picker // react time range picker 
+#React time period picker 
 Simple react component to select time ranges
 
 ## Getting Started
