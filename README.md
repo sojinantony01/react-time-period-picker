@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react-time-period-picker
+simple react component to pick some period of times 
+
+
+
 
 ## Available Scripts
 
