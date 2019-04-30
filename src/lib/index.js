@@ -110,7 +110,7 @@ class TimeRangePicker extends Component {
     }
 
     render() {
-        this.state.range = this.props.openings ? this.props.openings : this.state.range
+        // this.state.range = this.props.openings ? this.props.openings : this.state.range
         return(
             <div className={this.props.className}>
                 <div className="timepicker_container">
@@ -125,8 +125,8 @@ class TimeRangePicker extends Component {
                         format={format} 
                         onChange={this.onChange.bind(this,'end')}
                         placeholder={'Select time'}/>
-                    {this.state.invalidOverlap && <span className='invalid'>Time cannot be overlaped</span>}
-                    {this.state.equalRange && <span className='invalid'>Time canot be equal</span>}
+                    {this.state.invalidOverlap && <span className='invalid'> {this.props.invalidOverlapText ? this.props.invalidOverlapText : 'Time cannot be overlaped'}</span>}
+                    {this.state.equalRange && <span className='invalid'>{this.props.equalRangeText ? this.props.equalRangeText : 'Time cannot be equal' }</span>}
                     {/* {this.state.invalidRange && <span className='invalid'>'Select Time</span>} */}
                     {/* {this.props.invalidopenings && (!this.state.maxRange && !this.state.invalidOverlap && !this.state.equalRange && !this.state.invalidRange) && <span className='invalid'>"Select a time range" /></span>} */}
                     <span className="tick margin-left-16" onClick={this.addTime.bind(this)}><Icon type="check" theme="outlined"  /></span>

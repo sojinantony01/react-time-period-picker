@@ -33,8 +33,15 @@ class App extends Component {
 }
 export default App;
 ```
+## props
 
-
+| Prop | Description | Default
+| --- | --- | -- |
+| data | List of time ranges (Array of objects with start and end times)  | Array [] |
+| canOverlap | Allow to overlap time ranges | false |
+| className | --- | ""
+| invalidOverlapText | Invalid message on Overlap | Time cannot be overlaped |
+| equalRangeText | invalid message in equal time periods | Time cannot be equal | 
 ## Acknowledgments
 *antd
 *moment

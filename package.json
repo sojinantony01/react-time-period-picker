@@ -1,12 +1,14 @@
 {
   "name": "react-time-period-picker",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "keywords": [
     "Time ranges",
     "Time periods",
     "react time period",
     "react time period picker",
-    "react time period selector"
+    "react time period selector",
+    "react time range picker",
+    "time period picker"
   ],
   "author": "Sojin antony",
   "dependencies": {
