@@ -10,8 +10,8 @@ class App extends Component {
       };
   }
   onOpeningsChange(e) {
-    this.state.openings = e;
-    this.setState(this.state);
+    console.log(e)
+    this.setState({openings:e});
 }
   render() {
     return (<div>

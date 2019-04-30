@@ -6,6 +6,14 @@ Simple react component to select time ranges
 Package allows to select certain time ranges or periods.
 
 ```
+data = {
+    {start: "03:06", end: "03:10"},
+    {start: "03:11", end: "03:18"}
+}
+```
+
+
+```
 import React, { Component } from 'react'
 import Time from 'react-time-period-picker'
 
@@ -18,8 +26,7 @@ class App extends Component {
       };
   }
   onOpeningsChange(e) {
-    this.state.openings = e;
-    this.setState(this.state);
+    this.setState({openings:e});
 }
   render() {
     return (<div>
