@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Time from './time'
+import Time from './lib'
 import 'antd/dist/antd.css';
 class App extends Component {
 
