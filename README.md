@@ -12,6 +12,7 @@ data = {
     ...
 }
 ```
+![alt text](https://raw.githubusercontent.com/sojinantony01/react-time-period-picker/master/public/img/Screenshot%20from%202019-06-08%2000-42-59.png)
 
 
 ```
