@@ -8,7 +8,8 @@ Package allows to select certain time ranges or periods.
 ```
 data = {
     {start: "03:06", end: "03:10"},
-    {start: "03:11", end: "03:18"}
+    {start: "03:11", end: "03:18"},
+    ...
 }
 ```
 

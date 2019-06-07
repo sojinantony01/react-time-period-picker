@@ -150,7 +150,7 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      this.state.range = this.props.openings ? this.props.openings : this.state.range;
+      // this.state.range = this.props.openings ? this.props.openings : this.state.range
       return React.createElement("div", {
         className: this.props.className
       }, React.createElement("div", {
@@ -169,9 +169,9 @@ function (_Component) {
         placeholder: 'Select time'
       }), this.state.invalidOverlap && React.createElement("span", {
         className: "invalid"
-      }, "Time cannot be overlaped"), this.state.equalRange && React.createElement("span", {
+      }, " ", this.props.invalidOverlapText ? this.props.invalidOverlapText : 'Time cannot be overlaped'), this.state.equalRange && React.createElement("span", {
         className: "invalid"
-      }, "Time canot be equal"), React.createElement("span", {
+      }, this.props.equalRangeText ? this.props.equalRangeText : 'Time cannot be equal'), React.createElement("span", {
         className: "tick margin-left-16",
         onClick: this.addTime.bind(this)
       }, React.createElement(Icon, {
