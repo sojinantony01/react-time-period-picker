@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { TimePicker,Icon } from 'antd';
 import moment from 'moment';
 import 'antd/dist/antd.css';
-import './time.css'
+
 const format = 'HH:mm';
 
 class TimeRangePicker extends Component {
@@ -96,7 +96,7 @@ class TimeRangePicker extends Component {
         return this.state.range.map((data,index) => {
             return (<div className="date_range_tags" key={index}>
                         {data.start} - {data.end} 
-                        <Icon type="close" theme="outlined" onClick={this.remove.bind(this,index)} />
+                        <Icon className='time_picker_remove_icon' type="close" theme="outlined" onClick={this.remove.bind(this,index)} />
                     </div>)
         })
     }
@@ -119,7 +119,7 @@ class TimeRangePicker extends Component {
                         format={format} 
                         onChange={this.onChange.bind(this,'start')}
                         placeholder={'Select time'}/> 
-                    <div className=""><span>-</span></div>
+                    <div className="react_time_padding"><span>-</span></div>
                     <TimePicker  
                         value={this.state.end} 
                         format={format} 
@@ -129,7 +129,7 @@ class TimeRangePicker extends Component {
                     {this.state.equalRange && <span className='invalid'>{this.props.equalRangeText ? this.props.equalRangeText : 'Time cannot be equal' }</span>}
                     {/* {this.state.invalidRange && <span className='invalid'>'Select Time</span>} */}
                     {/* {this.props.invalidopenings && (!this.state.maxRange && !this.state.invalidOverlap && !this.state.equalRange && !this.state.invalidRange) && <span className='invalid'>"Select a time range" /></span>} */}
-                    <span className="tick margin-left-16" onClick={this.addTime.bind(this)}><Icon type="check" theme="outlined"  /></span>
+                    <span className="react_time_padding tick margin-left-16" onClick={this.addTime.bind(this)}><Icon type="check" theme="outlined"  /></span>
                 </div>
                 {this.getTimeData()}
             </div>    

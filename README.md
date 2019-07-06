@@ -1,5 +1,5 @@
 #React time period picker 
-Simple react component to select time ranges
+Simple react component to select multiple time ranges
 
 ## Getting Started
 
@@ -18,7 +18,7 @@ data = {
 ```
 import React, { Component } from 'react'
 import Time from 'react-time-period-picker'
-
+import  './react-time-period-picker/dist/time.css'
 class App extends Component {
 
   constructor(props) {
@@ -42,6 +42,7 @@ class App extends Component {
 }
 export default App;
 ```
+Use your on css for better UI
 ## props
 
 | Prop | Description | Default

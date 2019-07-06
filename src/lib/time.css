@@ -5,10 +5,21 @@
 .date_range_tags {
     padding: 4px 8px;
     background-color: coral;
-    max-width: 120px;
+    max-width: 125px;
+    box-shadow: 3px 5px 5px 1px #e8e8e8;
     margin: 10px;
+    border-radius: 4px;
 }
 .invalid {
     position: absolute;
     color: red;
+}
+.time_picker_remove_icon {
+    margin-left: 10px;
+}
+.ant-time-picker {
+    margin: 5px 10px 10px 5px;
+}
+.react_time_padding {
+    padding-top: 10px;
 }
