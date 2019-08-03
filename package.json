@@ -1,6 +1,7 @@
 {
   "name": "react-time-period-picker",
-  "version": "1.0.0",
+  "version": "1.0.3",
+  "description": "Simple react component to select multiple time ranges",
   "keywords": [
     "Time ranges",
     "Time periods",

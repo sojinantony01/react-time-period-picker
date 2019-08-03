@@ -14,6 +14,7 @@ data = {
 ```
 ![alt text](https://raw.githubusercontent.com/sojinantony01/react-time-period-picker/master/public/img/Screenshot%20from%202019-06-08%2000-42-59.png)
 
+![alt text](https://raw.githubusercontent.com/sojinantony01/react-time-period-picker/master/public/img/Screenshot%20from%202019-07-06%2014-02-23.png)
 
 ```
 import React, { Component } from 'react'

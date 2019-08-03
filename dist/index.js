@@ -7,7 +7,6 @@ import React, { Component } from 'react';
 import { TimePicker, Icon } from 'antd';
 import moment from 'moment';
 import 'antd/dist/antd.css';
-import './time.css';
 var format = 'HH:mm';
 
 var TimeRangePicker =
@@ -132,6 +131,7 @@ function (_Component) {
           className: "date_range_tags",
           key: index
         }, data.start, " - ", data.end, React.createElement(Icon, {
+          className: "time_picker_remove_icon",
           type: "close",
           theme: "outlined",
           onClick: _this2.remove.bind(_this2, index)
@@ -161,7 +161,7 @@ function (_Component) {
         onChange: this.onChange.bind(this, 'start'),
         placeholder: 'Select time'
       }), React.createElement("div", {
-        className: ""
+        className: "react_time_padding"
       }, React.createElement("span", null, "-")), React.createElement(TimePicker, {
         value: this.state.end,
         format: format,
@@ -172,7 +172,7 @@ function (_Component) {
       }, " ", this.props.invalidOverlapText ? this.props.invalidOverlapText : 'Time cannot be overlaped'), this.state.equalRange && React.createElement("span", {
         className: "invalid"
       }, this.props.equalRangeText ? this.props.equalRangeText : 'Time cannot be equal'), React.createElement("span", {
-        className: "tick margin-left-16",
+        className: "react_time_padding tick margin-left-16",
         onClick: this.addTime.bind(this)
       }, React.createElement(Icon, {
         type: "check",
